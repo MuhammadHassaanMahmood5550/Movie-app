@@ -1,0 +1,110 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  } */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html{
+  font-size: 62.5%;
+  now 1rem = 10px
+} */
+
+body{
+  background-color: #22254b !important;
+  color: white !important;
+ 
+}
+
+.for-movie{
+  background-color: #373b69;
+  margin: 2.6rem;
+  width: 250px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.overlay{
+  position: absolute;
+  background-color: white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 30px;
+  color: black;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  /* if height is to long it will adjust */
+  max-height: 100%;
+  /* transform: translateX(100%); */
+  opacity: 0;
+  transition: all 0.37s;
+}
+
+.for-movie:hover .overlay{
+  /* transform: translateX(0%); */
+  opacity: 1;
+  bottom: 0px;
+}
+
+.for-movie img{
+  max-width: 100%;
+  height: 375px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.movie-info{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0.4rem;  
+
+}
+
+.navimg{
+  background-image: url(./images/tmbLogo.svg);
+  background-repeat: no-repeat;
+  /* border: none !important;
+  border-radius: none;
+  background-color: white;
+  outline-color: white !important;
+  outline-style:; */
+ 
+  /* border: 0; */
+}
+
+
+
+.movie-info span{
+  margin-top: 5px;
+}
+
+.movie-info h3{
+  margin-right: 10px;
+}
+
+.movie-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
